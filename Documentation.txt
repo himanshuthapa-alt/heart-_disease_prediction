@@ -1,0 +1,28 @@
+My project predicts the presence of heart disease using clinical data such as age, cholesterol, resting ECG results, etc. I used Streamlit for a clean and simple UI, and Pickle to store and load the trained model and scaler. The model is based on RandomForestClassifier from scikit-learn and provides binary classification (disease/no disease). The input data is scaled using StandardScaler to ensure prediction accuracy.
+
+WORKING OF THE MODEL:
+
+The model is trained by first loading and cleaning the dataset. Then, it splits the data into training and testing sets, applies scaling using StandardScaler, and trains a RandomForestClassifier. The trained model and scaler are saved using Pickle as model.pkl and scaler.pkl. The Streamlit app (app.py) loads these files and takes user inputs to predict the risk of heart disease.
+
+DEPLOYMENT OF THE MODEL:
+
+I have deployed the app using Streamlit, which provides a web-based interface where users can enter their medical details to get instant predictions.
+
+SOURCES AND HELPING DOCUMENTATION:
+
+UCI Heart Disease Dataset
+
+Pickle Documentation
+
+RandomForestClassifier
+
+StandardScaler
+
+Streamlit Docs
+
+Train_test_split
+
+Cross_val_score
+
+Confusion Matrix Explained
+
